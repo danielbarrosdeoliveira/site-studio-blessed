@@ -1,41 +1,57 @@
 # Studio Blessed Website
-This repository is for the Studio Blessed website, created using HTML, SASS, Gulp, and Babel.
+This repository contains the source code for the Studio Blessed website, developed using HTML and Tailwind CSS.
 
 ## 🚀 Technologies Used:
-HTML: The foundation of the website's structure. <br />
-SASS: For writing styles in a modular and maintainable way.<br />
-Gulp: Task automation for front-end development.<br />
-Babel: JavaScript compiler to use the latest JS features.<br />
+- **HTML**: The structural foundation of the website.
+- **Tailwind CSS**: A utility-first CSS framework for fast styling.
 
-## 🛠️ How to Install and Run:
+## 🛠️ How to Install and Run
 
-To get started with the project, follow these steps:
+To start the project, follow the steps below:
 
-### Clone the repository:
+### 1️⃣ Clone the repository:
 
-```git clone https://github.com/danielbarrosdeoliveira/studio-blessed.git```
+```sh
+ git clone https://github.com/danielbarrosdeoliveira/studio-blessed.git
+```
 
-### Navigate to the project folder:
+### 2️⃣ Navigate to the project folder:
 
-```cd studio-blessed```
+```sh
+ cd studio-blessed
+```
 
-### Install the dependencies:
+### 3️⃣ Install dependencies:
 
-```yarn install```
+```sh
+ yarn install
+```
 
-### Run the development server:
+### 4️⃣ Start Tailwind CSS to watch for changes:
 
-```yarn dev```
+```sh
+ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
 
-Your website will now be available in your browser on port 3000.
+This will ensure that Tailwind generates an updated CSS file whenever there are changes in the code.
 
-```localhost:3000```
+## ▶️ Running via Live Preview in VS Code
+If you prefer to run the project directly in Visual Studio Code without setting up a server, follow these steps:
+
+1. Make sure you have the **Live Preview** extension by Microsoft installed.
+2. Open the main HTML file of the project.
+3. Press `CTRL + SHIFT + P`.
+4. Search for **Live Preview - Show Preview (External Browser)** and select the option.
+
+The website will automatically open in your default browser.
 
 ## 🚫 Contribution Policy
-While this is an Open Source project, we have a specific policy regarding contributions:
+This project **is not Open Source**, but it is free for modifications, alterations, and distribution:
 
-No Forks, No Pull Requests be accepted or merged into this repository.
-Please respect our decision and follow the guidelines. If you would like to discuss any features or suggestions, feel free to open an issue.
+- **We do not accept forks or pull requests.**
+- If you have suggestions or questions, feel free to open an issue in the repository.
 
-### 📄 License
+We ask that you respect our decision and follow the defined guidelines.
+
+## 📄 License
 This project is licensed under a custom license. You may use, modify, and distribute the software **only in modified form**. Redistribution of the original version is not permitted. Please refer to the [LICENSE](./LICENSE) file for full terms and conditions.
