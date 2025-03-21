@@ -76,7 +76,7 @@
   <body class="bg-blessed-secondary-light/30">
     <header
       id="header"
-      class="container py-6 flex flex-wrap items-center justify-between"
+      class="container py-8 flex flex-wrap items-center justify-between"
     >
       <a href="/">
         <img
@@ -124,7 +124,7 @@
       </nav>
     </header>
 
-    <main class="container py-16 sm:py-12">
+    <main class="container pb-12 sm:pb-16">
       <div
         class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-blessed-black text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12"
       >
@@ -139,15 +139,77 @@
           src="./src/videos/adicionando-cilios.mp4"
           autoplay
         ></video>
-        <div class="pt-36 pb-24"></div>
+        <div
+          class="bg-blessed-black/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-blessed-black sm:inline-flex sm:flex-row sm:rounded-full"
+        >
+          Realce sua beleza, descubra sua melhor versão.
+          <a
+            class="px-4 py-2 rounded-full bg-blessed-primary-light inline-flex flex-1"
+          >
+            Agendar agora
+          </a>
+        </div>
         <h1
           class="font-serif text-balance max-w-screen-lg text-2xl/normal sm:text-3xl/normal pb-4"
         >
-          Mais do que cílios e sobrancelhas, entregamos confiança, autoestima e
-          cuidado.
+          Venha sentir-se única, valorizada e bem cuidada
         </h1>
       </div>
     </main>
+
+    <section id="about" class="bg-blessed-secondary-light/50 py-12 sm:py-16">
+      <div class="container">
+        <h2
+          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary"
+        >
+          Sobre Nós
+        </h2>
+
+        <div class="grid grid-cols-[1fr_420px] gap-12 pt-16">
+          <div class="flex gap-4 flex-col text-blessed-black">
+            <p class="text-balance text-xl/relaxed indent-10">
+              O Studio Blessed nasceu da união de três profissionais apaixonadas
+              pela beleza: Caroline, sua irmã e uma amiga. Antes disso, Caroline
+              e sua irmã atuavam separadamente, cada uma com seu próprio Studio,
+              mas ambas começaram juntas na sala da casa da mãe. Com o tempo, um
+              quarto vago nessa mesma casa se tornou o espaço de trabalho
+              individual de cada uma delas. Mais tarde, decidiram dar um novo
+              passo e mudaram-se para seu primeiro estabelecimento comercial,
+              uma casa alugada que transformaram em um verdadeiro Studio de
+              beleza. Foi nesse período que conheceram a amiga, e juntas
+              decidiram unir forças para criar algo maior. Assim, surgiu o
+              Studio Blessed, um ambiente pensado para oferecer serviços de
+              qualidade, com atendimento personalizado e um toque especial de
+              cuidado e dedicação.
+            </p>
+            <p class="text-balance text-xl/relaxed indent-10">
+              Após um tempo juntas, a sociedade foi dissolvida, e a marca ficou
+              com Caroline, que decidiu continuar à frente do Studio. Para dar
+              continuidade ao crescimento do negócio, contou com o apoio de seu
+              esposo, Daniel Oliveira, que entrou como sócio, assumindo as áreas
+              de tecnologia e marketing. Além disso, sua mãe, Maria Cirlandia,
+              passou a integrar a equipe como Nail Designer, trazendo ainda mais
+              carinho e profissionalismo ao Studio. Hoje, o Studio Blessed segue
+              com a mesma essência, oferecendo serviços especializados e um
+              atendimento diferenciado. Nosso compromisso é fazer com que cada
+              cliente se sinta única, valorizada e bem cuidada, sempre com
+              técnicas modernas e produtos de alta qualidade.
+            </p>
+          </div>
+          <div class="rounded-xl content-end justify-items-center">
+            <video
+              width="320"
+              height="480"
+              class="bg-cover rounded-xl"
+              src="./src/videos/studio-blessed.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./js/index.js"></script>
   </body>
