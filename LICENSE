@@ -2,10 +2,14 @@ LICENSE AGREEMENT
 
 This software is licensed under the following terms:
 
-Use, Modification, and Distribution: You may use, modify, and distribute the software, but only in modified form.
-No Redistribution of the Original Version: The original version of the software cannot be redistributed. Any redistribution must be in the form of a modified version.
-No Redistribution Under Another Author's Name: You are not allowed to redistribute the software under another author’s name without substantial modifications to the code or content.
-Distribution of Modifications: Any modifications to the software must be distributed under the same license terms, with proper attribution to the original author.
-Attribution: When redistributing the modified software, you must give credit to the original author in a visible manner, including a reference to the license and the origin of the work.
+1. **Use, Modification, and Distribution**: You are granted permission to use, modify, and distribute the software, but only in a **substantially modified form**.
 
-Disclaimer: This software is provided "as is", without any warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+2. **No Redistribution of the Original Version**: The original, unmodified version of the software **cannot** be redistributed. Any redistribution must be in a **substantially modified** form that differentiates it from the original.
+
+3. **No Redistribution Under Another Author's Name**: You may **not** redistribute the software under another author’s name unless significant modifications have been made to the code or content.
+
+4. **Distribution of Modifications**: Any modified version of the software must be distributed under these **same license terms**, including a clear reference to the original author.
+
+5. **Attribution**: Any redistribution of a modified version must include **proper credit** to the original author in a visible and accessible manner, such as in documentation, an about page, or the source code header.
+
+6. **Disclaimer**: This software is provided **"as is"**, without any warranty of any kind, express or implied, including but not limited to warranties of **merchantability, fitness for a particular purpose, and non-infringement**. The author is not liable for any damages resulting from the use or misuse of this software.
