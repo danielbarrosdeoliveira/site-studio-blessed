@@ -126,11 +126,11 @@
 
     <main class="container pb-12 sm:pb-16">
       <div
-        class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-blessed-black text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12"
+        class="relative px-8 pb-12 pt-96 bg-gradient-to-t from-blessed-black text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12"
       >
         <video
           id="video"
-          class="absolute inset-0 size-full -z-10 animate-fade-in"
+          class="absolute inset-0 size-full -z-10 object-cover"
           muted
           playsinline
           loop
@@ -139,16 +139,18 @@
           src="./src/videos/adicionando-cilios.mp4"
           autoplay
         ></video>
+
         <div
           class="bg-blessed-black/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-blessed-black sm:inline-flex sm:flex-row sm:rounded-full"
         >
           Realce sua beleza, descubra sua melhor versão.
           <a
-            class="px-4 py-2 rounded-full bg-blessed-primary-light inline-flex flex-1"
+            class="px-4 py-2 rounded-full bg-blessed-primary-light inline-flex whitespace-nowrap flex-shrink-0"
           >
             Agendar agora
           </a>
         </div>
+
         <h1
           class="font-serif text-balance max-w-screen-lg text-2xl/normal sm:text-3xl/normal pb-4"
         >
@@ -223,7 +225,7 @@
         <div
           class="grid pt-12 sm:pt-16 gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
         >
-          <div class="grid gap-4 justify-items-center">
+          <div class="grid gap-4 justify-items-center sm:col-span-1">
             <div class="rounded-full w-full max-w-48">
               <img
                 class="object-cover rounded-full sepia hover:sepia-0 transition-all duration-300"
@@ -241,7 +243,7 @@
               excelência.
             </p>
           </div>
-          <div class="grid gap-4 justify-items-center">
+          <div class="grid gap-4 justify-items-center sm:col-span-1">
             <div class="rounded-full w-full max-w-48">
               <img
                 class="rounded-full sepia hover:sepia-0 transition-all duration-300"
@@ -259,7 +261,9 @@
               melhoria constante da experiência das clientes.
             </p>
           </div>
-          <div class="grid gap-4 justify-items-center">
+          <div
+            class="grid gap-4 justify-items-center sm:col-span-2 lg:col-span-1"
+          >
             <div class="rounded-full w-full max-w-48">
               <img
                 class="rounded-full sepia hover:sepia-0 transition-all duration-300"
