@@ -130,7 +130,7 @@
       >
         <video
           id="video"
-          class="absolute inset-0 size-full object-cover -z-10 animate-fade-in"
+          class="absolute inset-0 size-full -z-10 animate-fade-in"
           muted
           playsinline
           loop
@@ -157,10 +157,10 @@
       </div>
     </main>
 
-    <section id="about" class="bg-blessed-secondary-light/50 py-12 sm:py-16">
-      <div class="container">
+    <section id="about" class="bg-blessed-secondary-light/50">
+      <div class="container py-12 sm:py-16">
         <h2
-          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary"
+          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary uppercase"
         >
           Sobre Nós
         </h2>
@@ -178,9 +178,10 @@
               uma casa alugada que transformaram em um verdadeiro Studio de
               beleza. Foi nesse período que conheceram a amiga, e juntas
               decidiram unir forças para criar algo maior. Assim, surgiu o
-              Studio Blessed, um ambiente pensado para oferecer serviços de
-              qualidade, com atendimento personalizado e um toque especial de
-              cuidado e dedicação.
+              <em class="font-cursive text-3xl not-italic">Studio Blessed</em>,
+              um ambiente pensado para oferecer serviços de qualidade, com
+              atendimento personalizado e um toque especial de cuidado e
+              dedicação.
             </p>
             <p class="text-balance text-xl/relaxed indent-10">
               Após um tempo juntas, a sociedade foi dissolvida, e a marca ficou
@@ -206,6 +207,71 @@
               muted
               loop
             ></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pb-12 sm:pb-16">
+        <h2
+          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary uppercase"
+        >
+          Nossa equipe
+        </h2>
+
+        <div class="grid pt-12 sm:pt-16 gap-16 grid-cols-2 md:grid-cols-3">
+          <div class="grid gap-4 justify-items-center">
+            <div class="rounded-full w-full max-w-48">
+              <img
+                class="object-cover rounded-full sepia hover:sepia-0 transition-all duration-300"
+                src="./src/img/ceo-caroline-silva.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="font-serif text-lg text-center text-blessed-black">
+              Caroline Silva
+            </h3>
+            <p class="text-center text-balance text-base/normal">
+              Fundadora e CEO do Studio Blessed, Caroline é apaixonada pela
+              beleza e bem-estar das mulheres. Com sua dedicação, transformou o
+              Studio em um lugar onde cada cliente é tratada com muito carinho e
+              excelência.
+            </p>
+          </div>
+          <div class="grid gap-4 justify-items-center">
+            <div class="rounded-full w-full max-w-48">
+              <img
+                class="rounded-full sepia hover:sepia-0 transition-all duration-300"
+                src="./src/img/cto-daniel-oliveira.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="font-serif text-lg text-center text-blessed-black">
+              Daniel Oliveira
+            </h3>
+            <p class="text-center text-balance text-base/normal">
+              Sócio, CTO e CMO do Studio Blessed, Daniel é responsável pela
+              inovação tecnológica e pelo marketing do Studio. Seu olhar
+              criativo e estratégico contribui para a expansão do Studio e a
+              melhoria constante da experiência das clientes.
+            </p>
+          </div>
+          <div class="grid gap-4 justify-items-center">
+            <div class="rounded-full w-full max-w-48">
+              <img
+                class="rounded-full sepia hover:sepia-0 transition-all duration-300"
+                src="./src/img/nail-designer-cirlandia.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="font-serif text-lg text-center text-blessed-black">
+              Maria Cirlandia
+            </h3>
+            <p class="text-center text-balance text-base/normal">
+              Sogra de Daniel e mãe de Caroline, Maria Cirlandia é nossa
+              especialista em Nail Design, Manicure e Pedicure. Com sua
+              experiência e atenção aos detalhes, garante unhas perfeitas e um
+              atendimento acolhedor para todas as clientes.
+            </p>
           </div>
         </div>
       </div>
