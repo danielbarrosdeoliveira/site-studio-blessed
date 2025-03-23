@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .title-h2 {
+    @apply font-serif text-3xl text-center underline decoration-wavy underline-offset-[10px] decoration-blessed-primary uppercase;
+  }
+
+  .underline-primary {
+    @apply px-2 py-1 hover:underline hover:underline-offset-8 decoration-blessed-primary;
+  }
+
+  .button-primary {
+    @apply p-2 bg-blessed-primary rounded-md text-blessed-white hover:bg-blessed-secondary-light hover:text-blessed-primary transition-colors duration-300 shadow-sm;
+  }
+}

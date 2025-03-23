@@ -88,34 +88,19 @@
       <nav class="">
         <ul class="flex flex-col sm:flex-row gap-4 text-xl">
           <li class="">
-            <a
-              href="#about"
-              class="px-2 py-1 hover:underline hover:underline-offset-8 decoration-blessed-primary"
-            >
-              Sobre
-            </a>
+            <a href="#about" class="underline-primary"> Sobre </a>
           </li>
           <li>
-            <a
-              href="#services"
-              class="px-2 py-1 hover:underline hover:underline-offset-8 decoration-blessed-primary"
-            >
-              Serviços
-            </a>
+            <a href="#services" class="underline-primary"> Serviços </a>
           </li>
           <li>
-            <a
-              href="#footer"
-              class="px-2 py-1 hover:underline hover:underline-offset-8 decoration-blessed-primary"
-            >
-              Contato
-            </a>
+            <a href="#footer" class="underline-primary"> Contato </a>
           </li>
           <li>
             <a
               href="https://wa.me/5511988880015?text=Ol%C3%A1%21+Gostaria+de+agendar+hor%C3%A1rio"
               target="_blank"
-              class="p-2 bg-blessed-primary rounded-md text-blessed-white hover:bg-blessed-white hover:text-blessed-primary transition-colors shadow-sm"
+              class="button-primary"
             >
               Agendar Horário
             </a>
@@ -160,12 +145,9 @@
     </main>
 
     <section id="about" class="bg-blessed-secondary-light/50">
+      <!-- Sobre Nós -->
       <div class="container py-12 sm:py-16">
-        <h2
-          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary uppercase"
-        >
-          Sobre Nós
-        </h2>
+        <h2 class="title-h2">Sobre Nós</h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 pt-16">
           <div class="flex gap-4 flex-col text-blessed-black">
@@ -214,13 +196,9 @@
           </div>
         </div>
       </div>
-
+      <!-- Nossa Equipe -->
       <div class="container pb-12 sm:pb-16">
-        <h2
-          class="font-serif text-3xl text-center underline decoration-wavy underline-offset-8 decoration-blessed-primary uppercase"
-        >
-          Nossa equipe
-        </h2>
+        <h2 class="title-h2">Nossa equipe</h2>
 
         <div
           class="grid pt-12 sm:pt-16 gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
@@ -233,7 +211,9 @@
                 alt=""
               />
             </div>
-            <h3 class="font-serif text-lg text-center text-blessed-black">
+            <h3
+              class="font-serif font-bold text-xl text-center text-blessed-black"
+            >
               Caroline Silva
             </h3>
             <p class="text-center text-balance text-base/normal">
@@ -251,7 +231,9 @@
                 alt=""
               />
             </div>
-            <h3 class="font-serif text-lg text-center text-blessed-black">
+            <h3
+              class="font-serif font-bold text-xl text-center text-blessed-black"
+            >
               Daniel Oliveira
             </h3>
             <p class="text-center text-balance text-base/normal">
@@ -271,15 +253,406 @@
                 alt=""
               />
             </div>
-            <h3 class="font-serif text-lg text-center text-blessed-black">
+            <h3
+              class="font-serif font-bold text-xl text-center text-blessed-black"
+            >
               Maria Cirlandia
             </h3>
             <p class="text-center text-balance text-base/normal">
-              Sogra de Daniel e mãe de Caroline, Maria Cirlandia é nossa
-              especialista em Nail Design, Manicure e Pedicure. Com sua
-              experiência e atenção aos detalhes, garante unhas perfeitas e um
-              atendimento acolhedor para todas as clientes.
+              Mãe de Caroline, Maria Cirlandia é nossa especialista em Nail
+              Design, Manicure e Pedicure. Com sua experiência e atenção aos
+              detalhes, garante unhas perfeitas e um atendimento acolhedor para
+              todas as clientes.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O que fazemos -->
+    <section id="services" class="container py-12 sm:py-16">
+      <h2 class="title-h2 mb-12 sm:mb-16">o que fazemos</h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-9 p-4 sm:p-9 justify-center items-stretch"
+      >
+        <!-- Extensão de Cílios -->
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/cilios.png"
+              alt="Extensão de Cílios"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Extensão de Cílios
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Lash Lifting -->
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/lash-lifting.png"
+              alt="Sobrancelhas"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">Lash Lifting</h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                O Lash Lifting é um procedimento que realça seus cílios
+                naturais, proporcionando uma curvatura impecável, alongamento
+                sutil e um olhar mais aberto e expressivo – tudo isso sem a
+                necessidade de extensões ou máscaras!
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Sobrancelha -->
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/sobrancelha.png"
+              alt="Sobrancelhas"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">Sobrancelhas</h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Brow Lamination -->
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/brow-lamination.png"
+              alt="Brow Lamination"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Brow Lamination
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                O Brow Lamination é um tratamento inovador que realça e redefine
+                o formato natural das suas sobrancelhas, deixando os fios
+                alinhados, volumosos e com um efeito mais preenchido.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Depilação Corporal -->
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/depilacao-corporal.png"
+              alt="Depilação Corporal"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Depilação Corporal
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                A depilação corporal remove os pelos de forma eficiente,
+                garantindo uma pele lisa e suave por mais tempo. Perfeita para
+                quem busca praticidade, conforto e resultados duradouros.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap">
+                Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/cilios.png"
+              alt="Extensão de Cílios"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Extensão de Cílios
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/cilios.png"
+              alt="Extensão de Cílios"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Extensão de Cílios
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/cilios.png"
+              alt="Extensão de Cílios"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Extensão de Cílios
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col h-auto"
+        >
+          <!-- Imagem -->
+          <div class="relative w-full h-48">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="./src/img/cilios.png"
+              alt="Extensão de Cílios"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-blessed-black via-transparent to-blessed-black/10"
+            ></div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="p-4 sm:p-6 text-center flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-bold text-blessed-black">
+                Extensão de Cílios
+              </h4>
+              <p class="text-gray-600 mt-2 text-balance">
+                É um procedimento estético que visa a aumentar o volume de fios,
+                sem a necessidade de utilizar maquiagem (ou cílios postiços).
+                Proporcionando preenchimento de falhas, intensificando o olhar.
+              </p>
+            </div>
+
+            <div class="mt-4 flex justify-center gap-4 items-center">
+              <a
+                href="#"
+                class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+              >
+                Saiba Mais
+              </a>
+              <a href="#" class="button-primary whitespace-nowrap"
+                >Agendar Agora</a
+              >
+            </div>
           </div>
         </div>
       </div>
