@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+.container {
+  @apply mx-auto;
+}
+
+@theme {
+  --color-blessed-primary: #735826;
+  --color-blessed-primary-light: #a78b58;
+  --color-blessed-secondary: #d9c49e;
+  --color-blessed-secondary-light: #dacdb6;
+  --color-blessed-white: #f1f1f1;
+  --color-blessed-black: #130f0e;
+  --color-blessed-gray: #4f4b40;
+}
+
+.button-primary {
+  @apply px-2 py-3 bg-blessed-primary rounded-md text-blessed-white hover:bg-blessed-white hover:text-blessed-primary transition-colors duration-300 shadow-sm uppercase text-base font-bold;
+}
+
+.underline-primary {
+  @apply block w-full h-[2px] bg-blessed-primary transform scale-x-0 transition-all duration-300 ease-in-out group-hover:scale-x-100 mt-1;
+}
