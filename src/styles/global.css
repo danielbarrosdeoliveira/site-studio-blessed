@@ -12,6 +12,9 @@
   --color-blessed-white: #f1f1f1;
   --color-blessed-black: #130f0e;
   --color-blessed-gray: #4f4b40;
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: 'Merriweather', serif;
+  --font-cursive: 'Whisper', cursive;
 }
 
 .button-primary {
