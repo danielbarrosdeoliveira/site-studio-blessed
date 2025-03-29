@@ -1,0 +1,79 @@
+---
+import { Image } from 'astro:assets';
+import ceoCaroline from '../assets/images/ceo-caroline-silva.jpg';
+import ctoDaniel from '../assets/images/cto-daniel-oliveira.jpg';
+import nailDesigner from '../assets/images/nail-designer-cirlandia.jpg';
+---
+
+<section>
+  <div class="container py-12 sm:py-16">
+    <h2
+      class="font-serif text-3xl text-center underline decoration-wavy underline-offset-[10px] decoration-blessed-primary uppercase"
+    >
+      Nossa equipe
+    </h2>
+
+    <div
+      class="grid pt-12 sm:pt-16 gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      <div class="grid gap-4 justify-items-center sm:col-span-1">
+        <div class="rounded-full w-full max-w-48">
+          <Image
+            class="object-cover rounded-full sepia hover:sepia-0 transition-all duration-300"
+            src={ceoCaroline}
+            alt="CEO Caroline Silva"
+          />
+        </div>
+        <h3 class="font-serif font-bold text-xl text-center text-blessed-black">
+          Caroline Silva
+        </h3>
+        <p class="text-center text-balance text-base/normal">
+          Fundadora e CEO do Studio Blessed, Caroline é apaixonada pela beleza e
+          bem-estar das mulheres. Com sua dedicação, transformou o Studio em um
+          lugar onde cada cliente é tratada com muito carinho e excelência.
+        </p>
+      </div>
+      <div class="grid gap-4 justify-items-center sm:col-span-1">
+        <div class="rounded-full w-full max-w-48">
+          <Image
+            class="rounded-full sepia hover:sepia-0 transition-all duration-300"
+            src={ctoDaniel}
+            alt="CTO Daniel Oliveira"
+          />
+        </div>
+        <h3 class="font-serif font-bold text-xl text-center text-blessed-black">
+          Daniel Oliveira
+        </h3>
+        <p class="text-center text-balance text-base/normal">
+          Com espírito inovador e visão estratégica,
+          <a
+            href="https://www.linkedin.com.br/in/danielbarrosdeoliveira"
+            target="_blank"
+          >
+            Daniel
+          </a>
+          é sócio, CTO e CMO do Studio Blessed. Marido de Caroline e pai de Felipe,
+          responsável pela transformação tecnológica e o marketing.
+        </p>
+      </div>
+      <div class="grid gap-4 justify-items-center sm:col-span-2 lg:col-span-1">
+        <div class="rounded-full w-full max-w-48">
+          <Image
+            class="rounded-full sepia hover:sepia-0 transition-all duration-300"
+            src={nailDesigner}
+            alt="Nail Designer Maria Cirlandia"
+          />
+        </div>
+        <h3 class="font-serif font-bold text-xl text-center text-blessed-black">
+          Maria Cirlandia
+        </h3>
+        <p class="text-center text-balance text-base/normal">
+          Mãe de Caroline, Maria Cirlandia é nossa especialista em Nail Design,
+          Manicure e Pedicure. Com sua experiência e atenção aos detalhes,
+          garante unhas perfeitas e um atendimento acolhedor para todas as
+          clientes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
