@@ -26,6 +26,27 @@
   @apply block w-full h-[2px] bg-blessed-primary transform scale-x-0 transition-all duration-300 ease-in-out group-hover:scale-x-100 mt-1;
 }
 
+/* Definindo a cor da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #735826;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Para Firefox */
+html {
+  scrollbar-color: #735826 #f1f1f1;
+  scrollbar-width: thin;
+}
+
 @keyframes heartbeat {
   0% {
     transform: scale(1);
