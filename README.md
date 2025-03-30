@@ -1,48 +1,62 @@
-# Astro Starter Kit: Basics
+# Blessed Studio Site
 
-```sh
-yarn create astro@latest -- --template basics
+## Status
+
+Work in progress...
+
+## ✨ Technologies
+
+- [Astro.js](https://astro.build/) - The main framework used to build this project, providing faster performance and optimized static rendering.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework to style the project easily and efficiently.
+- [Animate.css](https://animate.style/) - A library for adding smooth animations to the project.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - For client-side interactivity and animations.
+
+## 💻 Project
+
+This project is a **landing page website** built with **Astro.js** and **Tailwind CSS** to showcase **Studio Blessed**. It features smooth animations using `animate.css` to enhance user experience.
+
+### Features
+- **Responsive design** that adapts seamlessly to different screen sizes.
+- **Animations** for sections appearing on scroll, utilizing `animate.css` with effects such as `fadeInLeft`, `fadeInRight`, and **new** `lightSpeedInRight` for more dynamic visibility.
+- **SEO Optimized** for better search engine visibility.
+- **Fast performance** and **optimized static rendering** for quick load times.
+
+### Upcoming Features (To-Do)
+
+- [ ] Implement a section for client ratings and reviews.
+- [ ] Add more animation effects for page elements.
+- [ ] Enhance mobile responsiveness for a more polished user experience.
+
+## 🧑‍💻 People Involved in the Project
+
+- [Daniel Oliveira](https://github.com/danielbarrosdeoliveira)
+
+## 🚀 How to Run the Project Locally
+
+1. Clone this repository.
+```bash
+  git clone https://github.com/your-github-profile/portfolio-project.git
+```
+2. Install dependencies
+```bash
+  yarn install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+3. Start the development server
+```bash
+yarn dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+4. Open the application in your browser at http://localhost:4321.
 
-## 🧞 Commands
+👥 Contributing
 
-All commands are run from the root of the project, from a terminal:
+We do not accept pull requests or external contributions to this project. Feel free to fork the repository and make personal modifications for your use, but keep in mind the following:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `yarn install`             | Installs dependencies                            |
-| `yarn dev`             | Starts local dev server at `localhost:4321`      |
-| `yarn build`           | Build your production site to `./dist/`          |
-| `yarn preview`         | Preview your build locally, before deploying     |
-| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `yarn astro -- --help` | Get help using the Astro CLI                     |
+Copying: You may freely copy the code.
+Redistribution: You are not allowed to redistribute, sell, or share the code without modifications.
+Commercial Use: You are not allowed to use the code for commercial purposes or sell it as is.
 
-## 👀 Want to learn more?
+📜 License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is licensed under a custom license, see [LICENSE](https://github.com/danielbarrosdeoliveira/site-studio-blessed/blob/master/LICENSE)
