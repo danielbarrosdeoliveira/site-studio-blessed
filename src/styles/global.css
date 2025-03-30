@@ -13,12 +13,12 @@
   --color-blessed-black: #130f0e;
   --color-blessed-gray: #4f4b40;
   --font-sans: 'Poppins', sans-serif;
-  --font-serif: 'Merriweather', serif;
+  --font-serif: 'Koh Santepheap', serif;
   --font-cursive: 'Whisper', cursive;
 }
 
 .button-primary {
-  @apply px-2 py-3 bg-blessed-primary rounded-md text-blessed-white hover:bg-blessed-white hover:text-blessed-primary transition-colors duration-300 shadow-sm uppercase text-base font-bold;
+  @apply px-2 py-3 bg-blessed-primary rounded-md text-blessed-white hover:bg-blessed-black transition-colors duration-300 shadow-sm uppercase text-base font-bold;
 }
 
 .underline-primary {
