@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import logoStudioBlessedWhite from '../assets/images/logo-studio-blessed-white.svg';
+import heartIcon from '../assets/icons/heart.svg';
+---
+
+<footer
+  id="contact"
+  class="bg-blessed-primary text-blessed-white py-12 sm:py-16"
+>
+  <div
+    class="container flex flex-col gap-6 justify-center text-center sm:justify-between items-center sm:flex-row sm:text-right animate__animated"
+    data-animation="left"
+  >
+    <Image
+      class="w-48"
+      src={logoStudioBlessedWhite}
+      alt="Logo do Studio Blessed"
+    />
+
+    <ul class="grid text-xl gap-6">
+      <li>
+        <a
+          target="_blank"
+          href="mailto:contato@blessedstudio.com.br"
+          class="hover:text-blessed-black transition duration-300"
+        >
+          contato@blessedstudio.com.br
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          class="hover:text-blessed-black transition duration-300"
+          href="https://wa.me/5511988880015?text=Ol%C3%A1%21+Gostaria+de+agendar+hor%C3%A1rio"
+        >
+          +55 11 98888-0015
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/studio.bles/"
+          class="hover:text-blessed-black transition duration-300"
+        >
+          @studio.bles
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container mt-6">
+    <p class="text-center">
+      Studio Blessed &copy; Todos os Direitos reservados
+    </p>
+    <p class="flex justify-center gap-1">
+      Desenvolvido com
+      <Image src={heartIcon} alt="Icone de coração" class="heartbeat" />
+      <a
+        href="https://www.linkedin.com/in/danielbarrosdeoliveira/"
+        target="_blank"
+        class="hover:text-blessed-black transition"
+      >
+        Daniel Oliveira
+      </a>
+    </p>
+  </div>
+</footer>

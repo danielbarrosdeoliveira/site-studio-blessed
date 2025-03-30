@@ -1,0 +1,108 @@
+---
+import extensaoCilios from '../assets/images/extensao-cilios.png';
+import lashLifting from '../assets/images/lash-lifting.png';
+import sobrancelha from '../assets/images/sobrancelha.png';
+import browLamination from '../assets/images/brow-lamination.png';
+import depilacaoCorporal from '../assets/images/depilacao-corporal.png';
+import { Image } from 'astro:assets';
+
+type Service = {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  aboutSrc?: string;
+};
+
+const services: Service[] = [
+  {
+    title: 'Extensão de Cílios',
+    description:
+      'É um procedimento estético que visa a aumentar o volume de fios, sem a necessidade de utilizar maquiagem (ou cílios postiços). Proporcionando preenchimento de falhas, intensificando o olhar.',
+    image: extensaoCilios,
+    // aboutSrc: '/servicos/extensao-de-cilios',
+  },
+  {
+    title: 'Lash Lifting',
+    description:
+      'Realça seus cílios naturais, proporcionando uma curvatura impecável, alongamento sutil e um olhar mais aberto e expressivo – tudo isso sem a necessidade de extensões ou máscaras!',
+    image: lashLifting,
+  },
+  {
+    title: 'Sobrancelha',
+    description:
+      'Realçamos a beleza natural das suas sobrancelhas com técnicas precisas para definição, alinhamento e preenchimento de falhas. Proporcionando um olhar mais harmônico e expressivo.',
+    image: sobrancelha,
+    // aboutSrc: '/servicos/sobrancelhas',
+  },
+  {
+    title: 'Brow Lamination',
+    description:
+      'Um tratamento inovador que realça e redefine o formato natural das suas sobrancelhas, deixando os fios alinhados, volumosos e com um efeito mais preenchido.',
+    image: browLamination,
+  },
+  {
+    title: 'Depilação Corporal',
+    description:
+      'Remove os pelos de forma eficiente, garantindo uma pele lisa e suave por mais tempo. Perfeita para quem busca praticidade, conforto e resultados duradouros.',
+    image: depilacaoCorporal,
+  },
+];
+---
+
+<section id="services" class="container pb-12 sm:pb-16">
+  <h2
+    class="font-serif text-3xl text-center underline decoration-wavy underline-offset-[10px] decoration-blessed-primary uppercase my-12 sm:my-16"
+  >
+    o que fazemos?
+  </h2>
+
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-9 pb-4 px-4 sm:px-9 sm:pb-9 justify-center items-stretch"
+  >
+    {
+      services.map((service) => {
+        return (
+          <div class="shadow-md rounded-xl overflow-hidden bg-blessed-white flex flex-col">
+            <div class="relative w-full h-60">
+              <Image
+                class="absolute inset-0 w-full h-full object-cover"
+                src={service.image}
+                alt="Extensão de Cílios"
+              />
+              <div class="absolute inset-0" />
+            </div>
+
+            <div class="p-4 sm:p-6 text-center grid">
+              <div>
+                <h4 class="text-xl font-bold text-blessed-black">
+                  {service.title}
+                </h4>
+                <p class="text-gray-600 mt-2 text-balance">
+                  {service.description}
+                </p>
+              </div>
+
+              <div class="mt-4 flex justify-center gap-4 items-center">
+                {service.aboutSrc && (
+                  <a
+                    href={service.aboutSrc}
+                    class="text-blessed-primary hover:text-blessed-black transition-colors duration-300 whitespace-nowrap"
+                  >
+                    Saiba Mais
+                  </a>
+                )}
+                <a
+                  href={`https://api.whatsapp.com/send/?phone=5511988880015&text=Ol%C3%A1%21+Gostaria+de+agendar+hor%C3%A1rio+para+${encodeURIComponent(service.title)}&type=phone_number&app_absent=0`}
+                  class="button-primary whitespace-nowrap"
+                  target="_blank"
+                >
+                  Agendar Agora
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>

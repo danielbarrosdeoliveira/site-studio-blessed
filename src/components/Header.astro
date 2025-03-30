@@ -1,0 +1,49 @@
+---
+const links = [
+  {
+    text: 'sobre',
+    href: '#about',
+  },
+  {
+    text: 'nossa equipe',
+    href: '#team',
+  },
+  {
+    text: 'serviços',
+    href: '#services',
+  },
+  {
+    text: 'contato',
+    href: '#contact',
+  },
+];
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo-studio-blessed.svg';
+---
+
+<header
+  id="header"
+  class="container py-8 flex flex-wrap items-center justify-between sm:px-8 px-6"
+>
+  <a href="/">
+    <Image class="max-w-20" src={logo} alt="logo Studio Blessed" />
+  </a>
+  <nav>
+    <ul class="flex flex-col sm:flex-row gap-2 text-xl items-center">
+      {
+        links.map((link) => {
+          return (
+            <li class="transform-3d">
+              <a
+                href={link.href}
+                class="block p-2 capitalize hover:-translate-y-1 transition-transform duration-300 hover:text-blessed-primary"
+              >
+                {link.text}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+</header>

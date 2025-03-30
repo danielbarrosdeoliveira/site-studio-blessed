@@ -1,57 +1,48 @@
-# Studio Blessed Website
-This repository contains the source code for the Studio Blessed website, developed using HTML and Tailwind CSS.
-
-## 🚀 Technologies Used:
-- **HTML**: The structural foundation of the website.
-- **Tailwind CSS**: A utility-first CSS framework for fast styling.
-
-## 🛠️ How to Install and Run
-
-To start the project, follow the steps below:
-
-### 1️⃣ Clone the repository:
+# Astro Starter Kit: Basics
 
 ```sh
- git clone https://github.com/danielbarrosdeoliveira/studio-blessed.git
+yarn create astro@latest -- --template basics
 ```
 
-### 2️⃣ Navigate to the project folder:
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-```sh
- cd studio-blessed
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-### 3️⃣ Install dependencies:
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-```sh
- yarn install
-```
+## 🧞 Commands
 
-### 4️⃣ Start Tailwind CSS to watch for changes:
+All commands are run from the root of the project, from a terminal:
 
-```sh
- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-```
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `yarn install`             | Installs dependencies                            |
+| `yarn dev`             | Starts local dev server at `localhost:4321`      |
+| `yarn build`           | Build your production site to `./dist/`          |
+| `yarn preview`         | Preview your build locally, before deploying     |
+| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro -- --help` | Get help using the Astro CLI                     |
 
-This will ensure that Tailwind generates an updated CSS file whenever there are changes in the code.
+## 👀 Want to learn more?
 
-## ▶️ Running via Live Preview in VS Code
-If you prefer to run the project directly in Visual Studio Code without setting up a server, follow these steps:
-
-1. Make sure you have the **Live Preview** extension by Microsoft installed.
-2. Open the main HTML file of the project.
-3. Press `CTRL + SHIFT + P`.
-4. Search for **Live Preview - Show Preview (External Browser)** and select the option.
-
-The website will automatically open in your default browser.
-
-## 🚫 Contribution Policy
-This project **is not Open Source**, but it is free for modifications, alterations, and distribution:
-
-- **We do not accept forks or pull requests.**
-- If you have suggestions or questions, feel free to open an issue in the repository.
-
-We ask that you respect our decision and follow the defined guidelines.
-
-## 📄 License
-This project is licensed under a custom license. You may use, modify, and distribute the software **only in modified form**. Redistribution of the original version is not permitted. Please refer to the [LICENSE](./LICENSE) file for full terms and conditions.
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
